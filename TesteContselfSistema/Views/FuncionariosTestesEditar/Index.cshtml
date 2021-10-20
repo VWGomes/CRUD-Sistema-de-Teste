@@ -1,0 +1,61 @@
+﻿@model IEnumerable<TesteContselfSistema.Models.FuncionariosTeste>
+
+@{
+    ViewBag.Title = "Sistema de Teste - Lista de Funcionários";
+}
+
+<h2>Lista de Funcionários</h2>
+
+
+
+
+<input type="submit" value="Novo Funcionário" class="btn btn-default" onclick="location.href='@Url.Action("Create")'">
+
+</input>
+<input type="submit" value="Pesquisar Funcionários" class="btn btn-default" onclick="location.href='@Url.Action("Pesquisa")'">
+
+</input>
+<br />
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Atividades)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                R$ @Html.DisplayFor(modelItem => item.Salario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Atividades)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.CodFuncionario }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.CodFuncionario })
+            </td>
+        </tr>
+    }
+
+</table>
+<br />

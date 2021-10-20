@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TesteContselfSistema.Models.FuncionariosTeste>
+
+
+<br />
+<br />
+<align>
+    <center>
+        <h1>Sistema de Teste</h1>
+
+        <script>
+            var i;
+            for (i = 0; i < 5; i++) {
+                document.write("<br>");
+            }
+        </script>
+
+
+        <input type="submit" value="Adicionar Novos Funcionários" class="btn btn-default" onclick="location.href='@Url.Action("Create", "FuncionariosTestesEditar")'">
+
+        </input>
+        <input type="submit" value="Pesquisar Funcionários" class="btn btn-default" onclick="location.href='@Url.Action("Pesquisa", "FuncionariosTestesEditar")'">
+
+        </input>
+        <script>
+            var i;
+            for (i = 0; i < 5; i++) {
+                document.write("<br>");
+            }
+        </script>
+</align>

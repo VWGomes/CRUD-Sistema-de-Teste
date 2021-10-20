@@ -1,0 +1,59 @@
+﻿@model TesteContselfSistema.Models.FuncionariosTeste
+
+@{
+    ViewBag.Title = "Sistema de Teste - Deletar funcionário";
+}
+
+<h3>Deletar funcionário</h3>
+
+<h4>Você realmente deseja deletar?</h4>
+<br />
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Atividades)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Atividades)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> 
+            <input type="submit" value="Cancelar" class="btn btn-default" onclick="location.href='@Url.Action("Index")'">
+        </div>
+    }
+</div>
+<br />
