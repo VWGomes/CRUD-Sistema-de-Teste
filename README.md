@@ -2,7 +2,8 @@
 
 Sistema de cadastro de funcionários.
 
-Telas:
-Funcionário: Pesquisa de funcionários, criar novo funcionário, alterar funcionário e deletar funcionário
+Telas: 05
 
-C# , Razor , MVC.NET , SQL Server
+Funcionário, Pesquisa de funcionários, Criar novo funcionário, Alterar funcionário e Deletar funcionário
+
+C# , Razor , MVC.NET , SQL Server.
