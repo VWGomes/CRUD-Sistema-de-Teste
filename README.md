@@ -11,4 +11,4 @@ C# , Razor , MVC.NET , SQL Server.
 (Processo seletivo) 2021.
 
 
-Em modificações - 2022.
+Em modificação - 2022.
