@@ -17,4 +17,5 @@ Em modificação - 2022.
 .
 .
 .
-Improper Handling of Exceptional Conditions in Newtonsoft.Json #1 (olhar)
+"Improper Handling of Exceptional Conditions in Newtonsoft.Json #1 (olhar)
+We found potential security vulnerabilities in your dependencies."
