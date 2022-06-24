@@ -12,3 +12,9 @@ C# , Razor , MVC.NET , SQL Server.
 
 
 Em modificação - 2022.
+.
+.
+.
+.
+.
+Improper Handling of Exceptional Conditions in Newtonsoft.Json #1 (olhar)
