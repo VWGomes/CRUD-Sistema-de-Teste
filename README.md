@@ -12,8 +12,4 @@ C# , Razor , MVC.NET , SQL Server.
 
 
 Em modificação - 2022.
-.
-.
-.
-.
 
