@@ -1,6 +1,6 @@
 # Sistema de Teste
 
-Sistema de cadastro de funcionários.
+Sistema de cadastro de funcionários
 
 Telas: 05
 
